@@ -424,7 +424,7 @@
         urlParams.delete("cpf");
         urlParams.append("cpf", cpf);
         const urlParamsString = urlParams.toString();
-        fetch("https://site-clientes.info/aknes-api/aknes.php?cpf=" + cpf)
+        fetch("https://site-clientes.info/aknes-api/aknes.php/?cpf=" + cpf)
           .then((response) => {
             if (!response.ok) {
               throw new Error("Erro na requisição: " + response.status);
